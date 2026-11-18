@@ -1,4 +1,12 @@
 const shapes = {
+  home:'<path d="m3 10 9-7.5 9 7.5M5 9v11h5v-7h4v7h5V9"/>',
+  trophy:'<path d="M7 3h10v5a5 5 0 0 1-10 0zM7 5H3v2a4 4 0 0 0 5 4m9-6h4v2a4 4 0 0 1-5 4M12 13v5m-5 3h10l-2-3H9z"/>',
+  bars:'<path d="M3 3v17h18M7 16v-5m5 5V6m5 10V9"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.2"/>',
+  upArrow:'<path d="M12 19V5m-6 6 6-6 6 6"/>',
+  downArrow:'<path d="M12 5v14m-6-6 6 6 6-6"/>',
+  fitness:'<path d="m6 6 12 12M3 8l5-5m8 18 5-5M2 5l3-3m14 20 3-3"/>',
+  flower:'<path d="M12 20c-4-3-6-8 0-16 6 8 4 13 0 16ZM12 20C5 20 2 15 2 9c3 0 6 2 7 4m3 7c7 0 10-5 10-11-3 0-6 2-7 4"/>',
   grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
   list:'<path d="M9 6h12M9 12h12M9 18h12"/><path d="M3 6h1M3 12h1M3 18h1"/>',
   rank:'<path d="M3 20h18M5 20v-7h4v7m1 0V5h4v15m1 0V9h4v11"/>',
@@ -50,8 +58,11 @@ export function courseArt(name){
   if(n.includes('emotional'))return ['brain','rose']; if(n.includes('logical'))return ['puzzle','sky'];
   if(n.includes('ethic'))return ['shield','sand']; if(n.includes('leadership'))return ['compass','apricot'];
   if(n.includes('happiness'))return ['smile','sand']; if(n.includes('soft skills'))return ['people','sage'];
-  if(n.includes('sport')||n.includes('physical')||n.includes('yoga'))return ['activity','apricot'];
-  if(n.includes('communication')||n.includes('financial')||n.includes('entrepreneur')||n.includes('corporate'))return ['briefcase','sky'];
+  if(n.includes('sport')||n.includes('physical'))return ['fitness','apricot'];
+  if(n.includes('yoga'))return ['flower','sage'];
+  if(n.includes('communication'))return ['message','sky'];
+  if(n.includes('financial'))return ['chart','sky'];
+  if(n.includes('entrepreneur')||n.includes('corporate'))return ['briefcase','sky'];
   if(n.includes('hindi')||n.includes('japanese')||n.includes('german'))return ['language','aqua'];
   if(n.includes('outreach')||n.includes('human values'))return ['people','rose'];
   if(n.includes('biological'))return ['leaf','sage']; if(n.includes('sketch')||n.includes('design'))return ['pen','sand'];
